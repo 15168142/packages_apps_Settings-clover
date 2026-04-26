@@ -267,4 +267,9 @@
             android:order="100"
             settings:controller="com.android.settings.notification.WorkSoundsPreferenceController"/>
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_xiaomiparts"
+        android:title="XiaomiParts"
+        android:order="-90" />
 </PreferenceScreen>

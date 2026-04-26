@@ -301,4 +301,9 @@
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_xiaomiparts"
+        android:title="XiaomiParts"
+        android:order="-140" />
 </PreferenceScreen>
