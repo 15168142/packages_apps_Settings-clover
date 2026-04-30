@@ -16,13 +16,110 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Android debugging as root -->
+    <string name="adb_enable_root">Gỡ lỗi với quyền root</string>
+    <string name="adb_enable_summary_root">Cho phép chạy gỡ lỗi Android với quyền root</string>
+
     <!-- About phone screen, status item label -->
     <string name="clover_firmware_version">Phiên bản Clover</string>
 
     <!-- Clover Maintainer -->
     <string name="clover_maintainer">Memetainer</string>
 
-    <!-- click to take partial screenshot -->
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <string name="show_dev_countdown_cm">{count, plural,
+      =1      {Hiện tại bạn đang cách # bước nữa để bật cài đặt nhà phát triển.}
+      other   {Hiện tại bạn đang cách # bước nữa để bật cài đặt nhà phát triển.}
+    }</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">Bạn đã bật cài đặt nhà phát triển!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">Không cần thiết, bạn đã bật cài đặt nhà phát triển.</string>
+
+    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Xác định vị trí của cảm biến vân tay ở mặt trước máy tính bảng của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Xác định vị trí của cảm biến vân tay ở mặt trước thiết bị của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Xác định vị trí của cảm biến vân tay ở mặt trước điện thoại của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Xác định cảm biến vân tay ở mặt sau máy tính bảng của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Xác định cảm biến vân tay ở mặt sau thiết bị của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Xác định cảm biến vân tay ở mặt sau điện thoại của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Xác định vị trí của cảm biến vân tay ở bên cạnh máy tính bảng của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Xác định cảm biến vân tay ở bên cạnh thiết bị của bạn.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Xác định vị trí của cảm biến vân tay ở bên cạnh điện thoại của bạn.</string>
+
+    <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Chạm vào cảm biến ở mặt trước máy tính bảng của bạn.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Chạm vào cảm biến ở mặt trước thiết bị của bạn.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Chạm vào cảm biến ở mặt trước điện thoại của bạn.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Chạm vào cảm biến ở mặt sau máy tính bảng của bạn.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Chạm vào cảm biến ở mặt sau thiết bị của bạn.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Chạm vào cảm biến ở mặt sau điện thoại của bạn.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Chạm vào cảm biến ở mặt bên máy tính bảng của bạn.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Chạm vào cảm biến ở bên cạnh thiết bị của bạn.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Chạm vào cảm biến ở mặt bên điện thoại của bạn.</string>
+
+    <!-- Warning message for the sd card setup -->
+    <string name="storage_warning_internal">Cảnh báo: Tùy chọn này có thể không hoạt động bình thường hoặc dẫn đến mất dữ liệu và do đó không được khuyến khích!</string>
+
+    <!-- Location settings screen, setting check box label if Assisted GPS should be enabled -->
+    <string name="assisted_gps">Sử dụng A-GPS</string>
+    <!-- Location settings screen, setting summary for Assisted GPS switch -->
+    <string name="assisted_gps_summary">Tải xuống dữ liệu hỗ trợ vệ tinh từ internet có thể cải thiện đáng kể hiệu suất khởi động GPS. Đối với các cuộc gọi khẩn cấp, A-GPS luôn được phép.</string>
+
+    <!-- Battery Info: Technology -->
+    <string name="battery_technology">Công nghệ</string>
+
+    <!-- Battery Info: Health -->
+    <string name="battery_health">Sức khỏe</string>
+    <string name="battery_health_good">Tốt</string>
+    <string name="battery_health_overheat">Quá nhiệt</string>
+    <string name="battery_health_dead">Hết pin</string>
+    <string name="battery_health_over_voltage">Quá điện áp</string>
+    <string name="battery_health_unspecified_failure">Lỗi không xác định</string>
+    <string name="battery_health_cold">Lạnh</string>
+    <string name="battery_health_unknown">Không rõ</string>
+
+    <!-- Battery Info: Temperature -->
+    <string name="battery_temperature">Nhiệt độ</string>
+
+    <!-- Battery Info: Voltage -->
+    <string name="battery_voltage">Điện áp</string>
+
+    <!-- Battery Info: Charge Counter -->
+    <string name="battery_charge_counter_summary">%1$d mAh</string>
+
+    <!-- Battery Info: Design Capacity -->
+    <string name="battery_design_capacity">Công suất thiết kế</string>
+    <string name="battery_design_capacity_summary">%1$d mAh</string>
+
+    <!-- Battery Info: Maximum Capacity -->
+    <string name="battery_maximum_capacity">Công suất tối đa</string>
+    <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
+
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Tự động mở khóa khi nhập đúng PIN. Tính năng này làm giảm bảo mật so với việc phải nhấn Enter để xác nhận.</string>
+
+    <!-- Copy to clipboard -->
+    <string name="copied_to_clipboard">Đã sao chép vào bảng nhớ tạm</string>
+    <string name="longpress_to_clipboard">Nhấn giữ để sao chép</string>
+
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Chạm để tắt màn hình</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Chạm hai lần vào thanh trạng thái hoặc màn hình khoá để tắt màn hình</string>
+
+    <!-- Battery saver refresh rate -->
+    <string name="battery_saver_refresh_rate_title">Giảm tần số quét</string>
+    <string name="battery_saver_refresh_rate_summary">Giảm tần số quét xuống 60 Hz để tiết kiệm pin khi bật chế độ tiết kiệm pin</string>
+
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Sáng màn hình khi cắm sạc</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Bật màn hình khi kết nối hoặc ngắt kết nối nguồn điện</string>
+
+    <!-- Black theme for dark mode -->
+    <string name="berry_black_theme_title">Đen tuyền</string>
+    <string name="berry_black_theme_summary">Nền đen tuyền cho chủ đề tối</string>
+
+    <!-- Click to take partial screenshot -->
     <string name="click_partial_screenshot_title">Ấn để chụp một phần màn hình</string>
     <string name="click_partial_screenshot_summary">Ấn tổ hợp phím giảm âm lượng và nguồn để chụp một phần màn hình</string>
 
@@ -38,19 +135,8 @@
     <string name="volume_button_music_control_title">Điều khiển phát lại</string>
     <string name="volume_button_music_control_summary">Chuyển bài hát bằng nhấn giữ các phím âm lượng khi màn hình tắt</string>
 
-    <!-- Battery saver refresh rate -->
-    <string name="battery_saver_refresh_rate_title">Giảm tần số quét</string>
-    <string name="battery_saver_refresh_rate_summary">Giảm tần số quét xuống 60 Hz để tiết kiệm pin khi bật chế độ tiết kiệm pin</string>
-
     <!-- Refresh rate -->
     <string name="refresh_rate_vrr_summary">Tự động giảm tần số quét khi màn hình không hoạt động để tiết kiệm pin. Có thể gây nhấp nháy hoặc thay đổi màu sắc trên một số màn hình</string>
-
-    <!-- Auto pin confirm -->
-    <string name="lock_screen_auto_pin_confirm_summary_custom">Tự động mở khóa khi nhập đúng PIN. Tính năng này làm giảm bảo mật so với việc phải nhấn Enter để xác nhận</string>
-
-    <!-- Copy to clipboard -->
-    <string name="copied_to_clipboard">Đã sao chép vào bảng nhớ tạm</string>
-    <string name="longpress_to_clipboard">Nhấn giữ để sao chép</string>
 
     <!-- Screenshot shutter -->
     <string name="screenshot_shutter_sound_title">Âm thanh chụp màn hình</string>
