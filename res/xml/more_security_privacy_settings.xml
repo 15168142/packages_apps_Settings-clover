@@ -219,6 +219,13 @@
         android:summary="@string/pif_data_summary"
         android:defaultValue=""/>
 
+    <com.android.settings.clover.preference.GlobalSettingSwitchPreference
+        android:order="255"
+        android:key="screen_capture_override"
+        android:title="@string/screen_capture_controls_title"
+        android:summary="@string/screen_capture_controls_summary"
+        android:defaultValue="false"/>
+
     <Preference
         android:order="260"
         android:key="encryption_and_credential"
@@ -251,12 +258,5 @@
         android:title="@string/memtag_title"
         android:fragment="com.android.settings.security.MemtagPage"
         settings:controller="com.android.settings.security.MemtagPagePreferenceController" />
-
-    <com.android.settings.clover.preference.GlobalSettingSwitchPreference
-        android:order="95"
-        android:key="screen_capture_override"
-        android:title="@string/screen_capture_controls_title"
-        android:summary="@string/screen_capture_controls_summary"
-        android:defaultValue="false"/>
 
 </PreferenceScreen>
