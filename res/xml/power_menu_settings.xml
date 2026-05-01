@@ -40,12 +40,15 @@
             settings:controller="com.android.settings.gestures.LongPressPowerForAssistantPreferenceController"/>
     </PreferenceCategory>
 
-    <com.android.settings.clover.preference.SystemSettingSwitchPreference
-        android:key="advanced_reboot"
-        android:title="@string/global_actions_advanced_reboot_title"
-        android:summary="@string/global_actions_advanced_reboot_summary"
-        android:defaultValue="false"
-        settings:allowDividerAbove="true" />
+    <PreferenceCategory
+        android:key="advanced_reboot_category"
+        android:title="@null">
+        <com.android.settings.clover.preference.SystemSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/global_actions_advanced_reboot_title"
+            android:summary="@string/global_actions_advanced_reboot_summary"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
 
     <com.android.settingslib.widget.SliderPreference
         android:key="gesture_power_menu_long_press_for_assist_sensitivity"
